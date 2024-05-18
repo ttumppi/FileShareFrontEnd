@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 
 
 const GetRequested = () =>{
@@ -22,9 +22,9 @@ const MainPage = () =>{
   <Router>
     <div>
       <TestElement />
-      <Switch>
+      <Routes>
         <Route exact path="/test" component={GetRequested} />
-      </Switch>
+      </Routes>
     </div>
   </Router>
 }
