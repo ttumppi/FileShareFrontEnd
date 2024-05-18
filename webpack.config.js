@@ -3,12 +3,12 @@ const nodeExternals = require('webpack-node-externals');
 const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 
 module.exports = {
-  entry: './src/server.js',
+  entry: './src/html-app.js',
   target: 'node',
   externals: [nodeExternals()],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'server.js',
+    filename: 'html-app.js',
   },
   resolve: {
     fallback: {
