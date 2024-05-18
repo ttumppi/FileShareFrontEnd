@@ -18,7 +18,7 @@ const TestElement = () => (
 
 
 
-const MainPage = () =>{
+const MainPage = () =>(
   <Router>
     <div>
       <TestElement />
@@ -27,7 +27,7 @@ const MainPage = () =>{
       </Routes>
     </div>
   </Router>
-}
+);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
