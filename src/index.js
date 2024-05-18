@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-route
 
 const GetRequested = () =>{
   console.log("Get Request Has been made");
-  useNavigate("/");
+  const navigate = useNavigate();
+  navigate("/");
   return (<h1>Message Received</h1>);
 }
 
