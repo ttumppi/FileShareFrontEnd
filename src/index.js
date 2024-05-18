@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes, useNavigate, } from 'react-rout
 
 const ReactDOMServer = require("react-dom/server");
 const express = require("express");
-const React = require("react");
 
 const expressApp = express();
 
