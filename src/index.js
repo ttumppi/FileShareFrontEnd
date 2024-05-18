@@ -20,19 +20,19 @@ const TestElement = () => {
 
 const MainPage = () =>{
   <Router>
-  <div>
-  <TestElement />
-  <Switch>
-    <Route exact path="/test" component={GetRequested} />
-  </Switch>
-  </div>
-</Router>
+    <div>
+      <TestElement />
+      <Switch>
+        <Route exact path="/test" component={GetRequested} />
+      </Switch>
+    </div>
+  </Router>
 }
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  < MainPage />
+  <MainPage />
 );
 
 
