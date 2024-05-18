@@ -4,9 +4,10 @@ import './index.css';
 import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 
 
-const GetRequested = () =>(
-  <h1>Message Received</h1>
-);
+const GetRequested = () =>{
+  console.log("Get Request Has been made");
+  return (<h1>Message Received</h1>);
+}
 
 
 const TestElement = () => (
