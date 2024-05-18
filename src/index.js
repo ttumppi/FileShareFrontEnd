@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 
 
-const GetRequested = () =>{
-  <h1>Message Received</h1>;
-}
+const GetRequested = () =>(
+  <h1>Message Received</h1>
+);
 
 
-const TestElement = () => {
+const TestElement = () => (
   <div className="header-grid">
     <div className="header-item">FileShare</div>
   </div>
-}
+);
 
 
 
@@ -22,9 +22,9 @@ const MainPage = () =>{
   <Router>
     <div>
       <TestElement />
-      <Switch>
+      <Routes>
         <Route exact path="/test" component={GetRequested} />
-      </Switch>
+      </Routes>
     </div>
   </Router>
 }
