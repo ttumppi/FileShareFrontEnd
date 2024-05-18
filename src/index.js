@@ -24,7 +24,7 @@ const MainPage = () =>(
     <div>
       <TestElement />
       <Routes>
-        <Route exact path="/test" component={GetRequested} />
+        <Route exact path="/test" element={<GetRequested />} />
       </Routes>
     </div>
   </Router>
