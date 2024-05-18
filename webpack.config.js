@@ -7,8 +7,8 @@ module.exports = {
   target: 'node',
   externals: [nodeExternals()],
   output: {
-    path: path.resolve('dist'),
-    filename: 'server.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'server.js',
   },
   resolve: {
     fallback: {
@@ -22,19 +22,19 @@ module.exports = {
       https: require.resolve('https-browserify'),
       url: require.resolve('url/'),
       buffer: require.resolve('buffer/'),
-      util: require.resolve('util/')
-    }
+      util: require.resolve('util/'),
+    },
   },
   plugins: [
-    new NodePolyfillPlugin()
+    new NodePolyfillPlugin(),
   ],
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
-      }
-    ]
-  }
+        use: 'babel-loader',
+      },
+    ],
+  },
 };
