@@ -36,20 +36,16 @@ const PageNameHeader = () => (
 
 
 const MainPageWithTest = () =>(
-  <Router>
     <div>
       <PageNameHeader />
       <GetRequested />
     </div>
-  </Router>
 );
 
 const MainPage = () =>(
-  <Router>
     <div>
       <PageNameHeader />
     </div>
-  </Router>
 );
 
 
