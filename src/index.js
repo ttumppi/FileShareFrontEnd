@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useNavigate, } from 'react-router-dom';
 
+const ReactDOMServer = require("react-dom/server");
+const express = require("express");
+const React = require("react");
+
+const expressApp = express();
+
+expressApp.get("/test", (req, res) => {
+  const html = ReactDOMServer.renderToString(
+    <MainPageWithTest />
+  );
+  res.send(html);
+});
+
+expressApp.get("", (req, res) => {
+  const html = ReactDOMServer.renderToString(
+    <MainPage />
+  );
+  res.send(html);
+});
 
 const GetRequested = () =>{
-  console.log("Get Request Has been made");
-  const navigate = useNavigate();
-
-  React.useEffect(() => {
-    navigate("/");
-  }, [navigate]);
- 
   return (<h1>Message Received</h1>);
 }
 
@@ -25,22 +36,25 @@ const PageNameHeader = () => (
 
 
 
+const MainPageWithTest = () =>(
+  <Router>
+    <div>
+      <PageNameHeader />
+      <GetRequested />
+    </div>
+  </Router>
+);
+
 const MainPage = () =>(
   <Router>
     <div>
       <PageNameHeader />
-      <Routes>
-        <Route exact path="/test" element={<GetRequested />} />
-      </Routes>
     </div>
   </Router>
 );
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <MainPage />
-);
+
 
 
 
