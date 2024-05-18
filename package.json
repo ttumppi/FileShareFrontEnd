@@ -16,7 +16,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build": "webpack",
-    "start": "node dist/server.js"
+    "start": "node dist/html-app.js",
+    "dev": "nodemon src/html-app.js"
   },
   "eslintConfig": {
     "extends": [
