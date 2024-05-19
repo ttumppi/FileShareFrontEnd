@@ -1,6 +1,6 @@
-const path = require('path');
-const nodeExternals = require('webpack-node-externals');
-const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
+const path = import('path');
+const nodeExternals = import('webpack-node-externals');
+const NodePolyfillPlugin = import('node-polyfill-webpack-plugin');
 
 module.exports = {
   entry: './src/html-app.js',
