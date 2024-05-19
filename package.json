@@ -21,7 +21,8 @@
     "build:Application": "node src/Application.js", 
     "build:html-app-routing": "node src/html-app-routing.js",
     "build": "webpack && npm run build:html-app && npm run build:html-app-routing && npm run build:Application",
-    "dev": "nodemon src/html-app.js"
+    "dev": "nodemon src/html-app.js",
+    "start" : "nodemon src/Application.js"
   },
   "eslintConfig": {
     "extends": [
