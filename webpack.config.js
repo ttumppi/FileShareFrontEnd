@@ -2,7 +2,7 @@ const path = import('path');
 const nodeExternals = import('webpack-node-externals');
 const NodePolyfillPlugin = import('node-polyfill-webpack-plugin');
 
-module.exports = {
+export default {
   entry: './src/html-app.js',
   target: 'node',
   externals: [nodeExternals()],
