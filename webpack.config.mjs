@@ -1,6 +1,11 @@
-const path = import('path');
-const nodeExternals = import('webpack-node-externals');
-const NodePolyfillPlugin = import('node-polyfill-webpack-plugin');
+import path from 'path';
+import { fileURLToPath } from 'url';
+import nodeExternals from 'webpack-node-externals';
+import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
+
+// For ES modules, __dirname and __filename are not available, so we need to get them using the following workaround
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default {
   entry: './src/html-app.js',
