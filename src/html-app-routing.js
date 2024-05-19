@@ -8,4 +8,3 @@ app.get('/', (req, res) => {
     res.render("errorpage");
   });
 
-export {app};
