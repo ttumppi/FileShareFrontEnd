@@ -15,10 +15,10 @@
   "scripts": {
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "webpack",
-    "prebuild": "node dist/html-app.js",
-    "build": "node dist/html-app-routing.js",
-    "postbuild": "Application.js", 
+    "build:html-app": "node src/html-app.js",
+    "build:Application": "node src/Application.js", 
+    "build:html-app-routing": "node src/html-app-routing.js",
+    "build": "webpack && npm run build:html-app && npm run build:html-app-routing && npm run build:Application",
     "dev": "nodemon src/html-app.js"
   },
   "eslintConfig": {
