@@ -4,7 +4,7 @@ app.get('/', (req, res) => {
     res.render("homepage");
   });
   
-  app.get('/about', (req, res) => {
+  app.get('/debug', (req, res) => {
     res.render("errorpage");
   });
 
