@@ -27,9 +27,9 @@ code {
     font-size: 40px;
 }
 
-.input-container{
-    align-items: center;
+.input-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-  
   
   
