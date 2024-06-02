@@ -9,7 +9,7 @@ const form = document.createElement("form");
 form.action = "http://dabblestudios.tplinkdns.com:16000/login";
 form.method = "POST";
 
-for (i = 0; i < inputFieldNames.length; i++){
+for (let i = 0; i < inputFieldNames.length; i++){
     if (inputFieldNames[i] == "username"){
         form.appendChild(createUsernameInputField());
         continue;
