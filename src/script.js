@@ -8,3 +8,5 @@ inputField.id = "input-field";
 
 inputField.placeholder = "Username...";
 
+container.appendChild(inputField);
+
