@@ -48,7 +48,7 @@ for (let i = 0; i < inputFieldNames.length; i++){
         continue;
     }
     if (inputFieldNames[i] == "password"){
-        form.appendChild(createPassswordInputField());
+        form.appendChild(createPasswordInputField());
         continue;
     }
     if (inputFieldNames[i] == "loginButton"){
