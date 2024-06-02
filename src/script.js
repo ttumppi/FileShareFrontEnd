@@ -4,6 +4,7 @@ const createUsernameInputField = () => {
 
     inputField.type = "text";
     inputField.id = "usernameInput";
+    inputField.name = "username";
     inputField.placeholder = "Username...";
 
     return inputField;
@@ -14,6 +15,7 @@ const createPasswordInputField = () => {
 
     inputField.type = "password";
     inputField.id = "passwordInput";
+    inputField.name = "password";
     inputField.placeholder = "";
 
     return inputField;
@@ -24,6 +26,7 @@ const createSubmitButton = () => {
 
     button.type = "submit";
     button.id = "submitButton";
+    button.name = "submit"
     button.value = "Login";
 
     return button;
