@@ -44,6 +44,7 @@ const container = document.getElementById("input-container");
 const form = document.createElement("form");
 form.action = "http://dabblestudios.tplinkdns.com:16000/login";
 form.method = "POST";
+form.enctype = "application/x-www-form-urlencoded";
 
 for (let i = 0; i < inputFieldNames.length; i++){
     if (inputFieldNames[i] == "username"){
