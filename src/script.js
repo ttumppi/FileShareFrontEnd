@@ -1,4 +1,4 @@
-import * as AddressConstants from "./constants.js" ;
+
 
 const inputFieldNames = ["username", "password", "loginButton"]; 
 
@@ -6,7 +6,7 @@ const inputFieldNames = ["username", "password", "loginButton"];
 const container = document.getElementById("input-container");
 
 const form = document.createElement("form");
-form.action = AddressConstants.POST_LOGIN_CREDENTIALS;
+form.action = "http://dabblestudios.tplinkdns.com:16000/login";
 form.method = "POST";
 
 for (i = 0; i < inputFieldNames.length; i++){
