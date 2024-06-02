@@ -1,4 +1,37 @@
 
+const createUsernameInputField = () => {
+    const inputField = document.createElement("input");
+
+    inputField.type = "text";
+    inputField.id = "usernameInput";
+    inputField.placeholder = "Username...";
+
+    return inputField;
+}
+
+const createPasswordInputField = () => {
+    const inputField = document.createElement("input");
+
+    inputField.type = "password";
+    inputField.id = "passwordInput";
+    inputField.placeholder = "";
+
+    return inputField;
+}
+
+const createSubmitButton = () => {
+    const button = document.createElement("input");
+
+    button.type = "submit";
+    button.id = "submitButton";
+    button.value = "Login";
+
+    return button;
+}
+
+
+
+
 
 const inputFieldNames = ["username", "password", "loginButton"]; 
 
@@ -31,32 +64,3 @@ container.appendChild(form);
 
 
 
-const createUsernameInputField = () => {
-    const inputField = document.createElement("input");
-
-    inputField.type = "text";
-    inputField.id = "usernameInput";
-    inputField.placeholder = "Username...";
-
-    return inputField;
-}
-
-const createPasswordInputField = () => {
-    const inputField = document.createElement("input");
-
-    inputField.type = "password";
-    inputField.id = "passwordInput";
-    inputField.placeholder = "";
-
-    return inputField;
-}
-
-const createSubmitButton = () => {
-    const button = document.createElement("input");
-
-    button.type = "submit";
-    button.id = "submitButton";
-    button.value = "Login";
-
-    return button;
-}
