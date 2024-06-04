@@ -17,6 +17,7 @@ const createPasswordInputField = () => {
     inputField.id = "passwordInput";
     inputField.name = "password";
     inputField.placeholder = "";
+    inputField.size = 50;
 
     return inputField;
 }
@@ -45,6 +46,7 @@ const form = document.createElement("form");
 form.action = "http://dabblestudios.tplinkdns.com:16000/login";
 form.method = "POST";
 form.enctype = "application/x-www-form-urlencoded";
+form.content
 
 for (let i = 0; i < inputFieldNames.length; i++){
     if (inputFieldNames[i] == "username"){
