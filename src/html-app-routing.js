@@ -1,7 +1,7 @@
 import {app} from "./html-app.js";
 
 app.get('/', (req, res) => {
-    res.render("homepage");
+    res.render("login");
   });
   
   app.get('/debug', (req, res) => {
