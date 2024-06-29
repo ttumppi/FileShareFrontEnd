@@ -28,8 +28,7 @@ code {
 }
 
 .input-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -40,10 +39,5 @@ code {
     justify-content: center;
 }
 
-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-}
+
   
