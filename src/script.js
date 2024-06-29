@@ -33,6 +33,7 @@ const createSubmitButton = () => {
     button.id = "submitButton";
     button.name = "submit"
     button.value = "Login";
+    button.size *= 2;
     div.className = "form-element";
     div.appendChild(button);
 
