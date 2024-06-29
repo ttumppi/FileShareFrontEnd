@@ -6,6 +6,7 @@ const createUsernameInputField = () => {
     inputField.id = "usernameInput";
     inputField.name = "username";
     inputField.placeholder = "Username...";
+    inputField.className = "form-element";
 
     return inputField;
 }
@@ -18,6 +19,7 @@ const createPasswordInputField = () => {
     inputField.name = "password";
     inputField.placeholder = "";
     inputField.size = 50;
+    inputField.className = "form-element";
 
     return inputField;
 }
@@ -29,6 +31,7 @@ const createSubmitButton = () => {
     button.id = "submitButton";
     button.name = "submit"
     button.value = "Login";
+    button.className = "form-element";
 
     return button;
 }

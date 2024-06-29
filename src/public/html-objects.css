@@ -31,5 +31,11 @@ code {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.form-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
   
