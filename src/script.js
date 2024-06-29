@@ -27,15 +27,16 @@ const createPasswordInputField = () => {
 
 const createSubmitButton = () => {
     const button = document.createElement("input");
+    const div = document.createElement("div");
 
     button.type = "submit";
     button.id = "submitButton";
     button.name = "submit"
     button.value = "Login";
-    button.className = "form-element";
-    button.className = "form-element-btn";
+    div.className = "form-element";
+    div.appendChild(button);
 
-    return button;
+    return div;
 }
 
 
