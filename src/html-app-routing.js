@@ -4,7 +4,6 @@ import bodyParser from "body-parser";
 const jsonParser = bodyParser.json();
 
 app.get('/', (req, res) => {
-    console.log("received index request");
     res.render("login");
   });
   
