@@ -2,6 +2,7 @@ import {app} from "./html-app.js";
 
 
 app.get('/', (req, res) => {
+    console.log("received index request");
     res.render("login");
   });
   
