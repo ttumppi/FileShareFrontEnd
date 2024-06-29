@@ -4,7 +4,10 @@ app.get('/', (req, res) => {
     res.render("login");
   });
   
-  app.get('/debug', (req, res) => {
+app.get('/debug', (req, res) => {
     res.render("errorpage");
   });
+
+app.post('/files', (req, res) => {
+  console.log(req.body);});
 
