@@ -9,9 +9,9 @@
 
     <% if (files)%>
       <ul>
-        <% foreach(file in files) %>
-          <%file%>
-        %>
+        <% files.foreach(function(file){ %>
+          <li><%file%></li>
+        <% });%>
       </ul>
     
   </body>
