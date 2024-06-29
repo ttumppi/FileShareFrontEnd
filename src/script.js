@@ -6,6 +6,7 @@ const createUsernameInputField = () => {
     inputField.id = "usernameInput";
     inputField.name = "username";
     inputField.placeholder = "Username...";
+    inputField.size = 50;
     inputField.className = "form-element";
 
     return inputField;
