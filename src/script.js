@@ -33,6 +33,7 @@ const createSubmitButton = () => {
     button.name = "submit"
     button.value = "Login";
     button.className = "form-element";
+    button.className = "form-element-btn";
 
     return button;
 }
