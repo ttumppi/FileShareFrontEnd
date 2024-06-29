@@ -6,7 +6,7 @@
     <title>Homepage</title>
   </head>
   <body>
-    <%include("reusables/header")%>
+    <%- include("reusables/header")%>
     <% if (files)%>
       <ul>
         <% Object.keys(files).forEach(function(file){ %>
