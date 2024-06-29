@@ -2,6 +2,7 @@ import {app} from "./html-app.js";
 
 app.get('/', (req, res) => {
     res.render("login");
+    console.log("homepage requested");
   });
   
 app.get('/debug', (req, res) => {
