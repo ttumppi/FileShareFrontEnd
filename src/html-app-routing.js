@@ -9,5 +9,7 @@ app.get('/debug', (req, res) => {
   });
 
 app.post('/files', (req, res) => {
-  console.log(req.body);});
+  console.log(req.body);
+  res.render("errorpage");
+});
 
