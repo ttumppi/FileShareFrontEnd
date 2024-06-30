@@ -4,7 +4,7 @@ const OnDownloadClick = (id) => {
 }
 
 const OnUploadClick = () => {
-    const fileControl = document.getElementById("fileSelection");
+    const fileControl = document.getElementById("fileSelect");
     const files = fileControl.files;
     if (files.length == 0){
         alert("No File Selected");
