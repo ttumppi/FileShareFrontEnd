@@ -15,6 +15,7 @@ const OnUploadClick = () => {
 
     formData.append("file", files[0]);
 
+    console.log("Uploading file");
     fetch("http://dabblestudios.tplinkdns.com:16000/upload", {
         method: "POST",
         body: formData
