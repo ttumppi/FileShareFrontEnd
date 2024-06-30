@@ -3,4 +3,3 @@ const OnDownloadClick = (id) => {
 }
 
 
-export {OnDownloadClick, }
