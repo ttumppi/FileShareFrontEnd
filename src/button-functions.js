@@ -3,4 +3,20 @@ const OnDownloadClick = (id) => {
     window.location.href = "http://dabblestudios.tplinkdns.com:16000/download/" + id
 }
 
+const OnUploadClick = () => {
+    const fileControl = document.getElementById("fileSelection");
+    const files = fileControl.files;
+    if (files.length == 0){
+        alert("No File Selected");
+        return;
+    }
 
+    const formData = new FormData();
+
+    formData.append("file", files[0]);
+
+    fetch("http://dabblestudios.tplinkdns.com:16000/upload", {
+        method: "POST",
+        body: formData
+    });
+}
