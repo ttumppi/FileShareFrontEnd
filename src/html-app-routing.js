@@ -12,6 +12,11 @@ app.get('/debug', (req, res) => {
   });
 
 app.post('/files', jsonParser, (req, res) => {
-  res.render("homepage", {files: req.body});
+  if (req.body){
+    res.render("homepage", {files: req.body});
+  }
+  else{
+    res.render("homepage");
+  }
 });
 
