@@ -12,11 +12,8 @@ app.get('/debug', (req, res) => {
   });
 
 app.post('/files', jsonParser, (req, res) => {
-  if (req.body){
-    res.render("homepage", {files: req.body});
-  }
-  else{
-    res.render("homepage");
-  }
+  res.render("homepage", {files: req.body});
+  
+  
 });
 
