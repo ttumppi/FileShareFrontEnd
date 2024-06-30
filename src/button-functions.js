@@ -13,7 +13,7 @@ const OnUploadClick = () => {
 
     const formData = new FormData();
 
-    formData.append("file", files[0], files[0].name);
+    formData.append("file", files[0]);
 
     console.log("Uploading file");
     fetch("http://dabblestudios.tplinkdns.com:16000/upload", {
