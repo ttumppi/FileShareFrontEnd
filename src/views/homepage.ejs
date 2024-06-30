@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://dabblestudios.tplinkdns.com:16000/css">
     <title>Homepage</title>
+    <script src="http://dabblestudios.tplinkdns.com:16000/buttonScript.js"></script>
   </head>
   <body>
     <%- include("reusables/header")%>
     <% if (files)%>
       <ul>
         <% Object.keys(files).forEach(function(file){ %>
-          <li><%=files[file]%> | id = <%=file%></li>
+          <li><%=files[file]%> | id = <%=file%><button = value="Download" onclick="OnDownloadClick('<%=file%>')"> </button></li>
         <% });%>
       </ul>
-    
   </body>
 </html>
