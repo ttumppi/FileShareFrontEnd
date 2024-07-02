@@ -21,3 +21,7 @@ const OnUploadClick = () => {
         body: formData
     });
 }
+
+const OnDeleteClick = (id) => {
+    fetch("http://dabblestudios.tplinkdns.com:16000/delete/" + id);
+}
