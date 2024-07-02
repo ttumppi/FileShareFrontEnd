@@ -26,10 +26,12 @@ const  OnUploadClick = async () => {
     if (response.status != 200) {
         alert(response.headers.get("Errors"));
     }
+    location.reload();
 }
 
 const OnDeleteClick = (id) => {
     fetch("http://dabblestudios.tplinkdns.com:16000/delete/" + id);
+    location.reload();
 }
 
 
