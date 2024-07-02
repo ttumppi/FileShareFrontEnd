@@ -18,7 +18,7 @@ const  OnUploadClick = async () => {
 
     console.log("Uploading file");
     const popupWindow = showPopup();
-    const response = await fetch("http://dabblestudios.tplinkdns.com:16000/upload", {
+    const response = await fetch("https://dabblestudios.tplinkdns.com:16000/upload", {
         method: "POST",
         body: formData
     });
@@ -30,7 +30,7 @@ const  OnUploadClick = async () => {
 }
 
 const OnDeleteClick = async (id) => {
-    await fetch("http://dabblestudios.tplinkdns.com:16000/delete/" + id);
+    await fetch("https://dabblestudios.tplinkdns.com:16000/delete/" + id);
     location.reload();
 }
 

@@ -51,7 +51,7 @@ const inputFieldNames = ["username", "password", "loginButton"];
 const container = document.getElementById("input-container");
 
 const form = document.createElement("form");
-form.action = "http://dabblestudios.tplinkdns.com:16000/login";
+form.action = "https://dabblestudios.tplinkdns.com:16000/login";
 form.method = "POST";
 form.enctype = "application/x-www-form-urlencoded";
 form.content
