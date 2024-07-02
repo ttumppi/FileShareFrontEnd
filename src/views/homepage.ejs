@@ -12,8 +12,9 @@
       <ul>
         <% Object.keys(files).forEach(function(file){ %>
           <li><%=files[file]%> | id = <%=file%><button onclick="OnDownloadClick('<%=file%>')">Download</button>
-            <% if (UserLevel == 1)%>
+            <% if (user == 1){%>
               <button>Delete</button>
+            <%}%>
           </li>
         
         <% });%>
