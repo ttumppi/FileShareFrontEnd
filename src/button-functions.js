@@ -29,8 +29,8 @@ const  OnUploadClick = async () => {
     location.reload();
 }
 
-const OnDeleteClick = (id) => {
-    fetch("http://dabblestudios.tplinkdns.com:16000/delete/" + id);
+const OnDeleteClick = async (id) => {
+    await fetch("http://dabblestudios.tplinkdns.com:16000/delete/" + id);
     location.reload();
 }
 
