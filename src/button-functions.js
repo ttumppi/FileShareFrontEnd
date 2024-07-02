@@ -4,6 +4,7 @@ const OnDownloadClick = (id) => {
 }
 
 const OnUploadClick = () => {
+    console.log("Upload button clicked");
     const fileControl = document.getElementById("fileSelect");
     const files = fileControl.files;
     if (files.length == 0){
