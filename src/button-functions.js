@@ -3,7 +3,7 @@ const OnDownloadClick = (id) => {
     window.location.href = "http://dabblestudios.tplinkdns.com:16000/download/" + id
 }
 
-const OnUploadClick = () => {
+const  OnUploadClick = async () => {
     console.log("Upload button clicked");
     const fileControl = document.getElementById("fileSelect");
     const files = fileControl.files;
