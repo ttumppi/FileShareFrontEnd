@@ -8,7 +8,7 @@
   </head>
   <body>
     <%- include("reusables/header")%>
-    <% if (files && Object.keys(files).length > 0)%>
+    <% if (files && Object.keys(files).length > 0){%>
       <ul>
         <% Object.keys(files).forEach(function(file){ %>
           <li><%=files[file]%> | id = <%=file%><button onclick="OnDownloadClick('<%=file%>')">Download</button>
@@ -19,6 +19,7 @@
         
         <% });%>
       </ul>
+    <%}%>
 
 
     <form id="uploadForm">
