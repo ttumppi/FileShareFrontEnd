@@ -16,12 +16,38 @@ const OnUploadClick = () => {
     formData.append("file", files[0]);
 
     console.log("Uploading file");
-    fetch("http://dabblestudios.tplinkdns.com:16000/upload", {
+    const popupWindow = showPopup();
+    const response = await fetch("http://dabblestudios.tplinkdns.com:16000/upload", {
         method: "POST",
         body: formData
     });
+    popupWindow.closePopup();
+    if (response.status != 200) {
+        alert(response.headers.get("Errors"));
+    }
 }
 
 const OnDeleteClick = (id) => {
     fetch("http://dabblestudios.tplinkdns.com:16000/delete/" + id);
+}
+
+
+const  showPopup = () => {
+  
+    const popupContent = `
+        <div style="padding: 20px; text-align: center;">
+            <h2>Notification</h2>
+            <p>Upload in progress, please wait!</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    `;
+
+    const popupWindow = window.open("", "_blank", "width=400,height=300");
+
+    popupWindow.document.write(popupContent);
+
+    popupWindow.closePopup = function() {
+        popupWindow.close();
+    };
+    return popupWindow;
 }
