@@ -12,7 +12,7 @@ app.get('/debug', (req, res) => {
   });
 
 app.post('/files', jsonParser, (req, res) => {
-  console.log("received files post");
+  console.log(req.body);
   res.render("homepage", {files: req.body});
   
   
